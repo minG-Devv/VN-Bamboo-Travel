@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size:  13.3333px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+    height: 120px;
+    width: 1000px;
+    /* background-color: black; */
+    
+    z-index: 1;
+}
+
+#header #conten-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+/* #logo {
+    display: inline-block;
+} */
+
+#header #conten-header #logo img {
+    height: 65px;
+    margin: 5px 0 7px;
+}
+
+
+
+
+
+#contact {
+    font-size: 13.3333px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact div:nth-child(1) a {
+    color: #006400;
+    text-decoration: none;
+}
+
+#contact div:nth-child(2) a {
+    color: #996600;
+    text-decoration: none;
+}
+
+#contact div:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+#contact div:nth-child(2) {
+    margin: 5px 0;
+}
+#nav {
+    height: 40px;
+    background: url(/access/img/mtbanner.png) top left repeat;
+    border-right: 3px solid #ccc;
+}
+
+#nav, .subnav li {
+    list-style-type: none;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li {
+    display: inline-block;
+    border-left: 3px solid #ccc;
+}
+
+#nav>li>a {
+    color: #000;
+    text-transform: uppercase;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 12px;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    min-width: 220px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav #lastmenu {
+    position: absolute;
+    left: -15%;
+    min-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+
+#nav .subnav a {
+    line-height: 30px;
+    color: #000;
+}
+
+#nav li:hover .subnav,
+.subnav li:hover .submenu {
+    display: block;
+}
+
+#nav .subnav>ul>li:hover>a,
+#nav .submenu li:hover a
+ {
+    background-color: #006400;
+    color: #fff;
+}
+
+
+.subnav .menu-c3 {
+    position: relative;
+}
+
+.subnav .menu-c3 .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 10%;
+    min-width: 220px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+
+ #nav .submenu li a {
+    line-height: 24px;
+ }
+
+
+
+#slider {
+    width: 100%;
+    position: relative;
+}
+
+
+#slider img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+#slider .list-img #icon-prev {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+#slider .list-img #icon-next {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+#slider .list-img i:hover {
+    cursor: pointer;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: #666666 !important;
+
+}
+
+#ticker {
+    width: 100%;
+    height: 12px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+#ticker i {
+    font-size: 8px;
+    margin: 0 4px;
+    border: 1px solid;
+    border-radius: 50%;
+
+}
+
+#ticker i:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #000;
+    
+}
+
+
+
+#content {
+    width: 1000px;
+    margin-top: 12px;
+    position: relative;
+}
+
+
+#conten-why {
+    height: 206px;
+    width: 760px;
+}
+
+
+.ctt-heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #4D4D4D;
+    padding: 0 0 10px;
+}
+
+
+#ctt-mota {
+    position: relative;
+    height: 138px;
+    width: 570px;
+}
+
+
+#ctt-logo {
+    text-align: center;
+    font-size: 10px;
+    width: 148px;
+    height: 112px;
+    border: 1px #1f9e3a solid;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#ctt-logo div {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+}
+
+#ctt-logo img {
+    height: 100%;
+    width: 147px;    
+    display: block;
+}
+
+
+
+#ctt-mota #search-mid {
+    height: 138px;
+    width: 375px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px #1f9e3a solid;
+}
+
+#search-mid div {
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-bottom: 12px;
+}
+
+#search-mid div:nth-child(1) {
+    margin-top: 15px;
+}
+
+#search-mid div i {
+    color: #1f9e3a;
+}
+
+
+#form-search {
+    width: 220px;
+    height: 196px;
+    background-color: #4AD45A;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+#search-head {
+    width: 200px;
+    height: 21px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px #fff solid;
+    margin: 10px 10px 0;
+}
+
+
+.search-option {
+    width: 200px;
+    height: 23px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+
+.search-option div {
+    display: inline-block;
+    line-height: 23px;
+}
+
+.search-option div:nth-child(1) {
+    border-right: 2px #A6A6A6 solid;
+    width: 175px;
+}
+
+.search-option div:nth-child(1) i {
+    margin: 0 10px;
+} 
+
+.search-option i {
+    color: #A6A6A6;
+}
+
+#form-search button {
+    padding: 1px 12px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+#conten-tour {
+    height: 374px;
+    border-bottom: #b9b9b9 1px dashed;
+    margin-bottom: 20px;
+    
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tour-list {
+    width: 220px;
+}
+
+.tour-img {
+    width: 100%;
+    display: block;
+    height: 116px;
+}
+
+.tour-dd {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 3px 3px;
+    line-height: 20px;
+    color: #4D4D4D;
+    
+}
+
+.tour-ct {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+    white-space: normal;
+    color: #595959;
+    font-size: 13px;
+}
+
+.tour-btn {
+    font-size: 11px;
+    color: #996600;
+    border: 1px solid #65635b;
+    border-radius: 5px;
+    padding: 5px 12px;
+    margin-left: 60px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+
+.tour-btn:hover {
+    background-color: #006400;
+    color: #fff;
+}
+
+
+#conten-most {
+    height: 374px;
+}
+
+
+
+
+
+
+
+#bar-footer {
+    width: 100%;
+    height: 44px;
+    background-color: #d6d6d5;
+    border-top: #1f9e3a 3px solid;
+    border-bottom: #1f9e3a 3px solid;
+    text-align: center;
+}
+
+
+
+#bar-footer li {
+    display: inline-block;
+}
+
+#bar-footer li a{
+    line-height: 44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 15px;
+    display: block;
+    list-style: none;
+}
+
+
+
+
+
+#footer {
+    width: 100%;
+    height: 155px;
+    background-color: #d6d6d5;
+}
+
+#footer-contact {
+    font-size: 14px;
+    padding: 15px 0 ;
+    color: #5d5d5d;
+    text-align: center;
+}
+
+
+#footer-contact a {
+    text-decoration: none;
+    color: #996600;
+}
+
+#footer-contact a:hover {
+    text-decoration: underline;
+}
+
+#footer-contact div {
+    margin-bottom: 8px;
+}
+
+#footer-contact i {
+    color: #006400;
+    font-weight: bold;
+}
+
+
+#box-gotop {
+    height: 25px;
+    width: 25px;
+    font-size: 12px;
+    border: 2px #000 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    background-color: #333;
+}
+
+#box-gotop a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#box-gotop:hover {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #1f9e3a;
+
+}
