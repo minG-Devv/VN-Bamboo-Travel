@@ -270,7 +270,7 @@
 
 #ctt-logo img {
     height: 100%;
-    width: 147px;    
+    width: 146px;    
     display: block;
 }
 
@@ -329,8 +329,9 @@
     height: 23px;
     background-color: #f0f0f0;
     border-radius: 5px;
-    margin: 5px 0;
+    margin-bottom: 8px;
 }
+
 
 
 
@@ -354,7 +355,6 @@
 
 #form-search button {
     padding: 1px 12px;
-    margin-top: 5px;
 }
 
 
@@ -499,8 +499,8 @@
 
 
 #box-gotop {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     font-size: 12px;
     border: 2px #000 solid;
     display: flex;
@@ -510,19 +510,22 @@
     right: 10px;
     bottom: 10px;
     z-index: 2;
-    background-color: #333;
 }
 
 #box-gotop a {
+    width: 25px;
+    height: 25px;
     color: #fff;
+    line-height: 25px;
     text-decoration: none;
     text-align: center;
+    background-color: #333;
 }
 
 
-#box-gotop:hover {
+#box-gotop:hover a{
     font-weight: bold;
     font-size: 16px;
-    background-color: #1f9e3a;
+    background-color: #666666;
 
 }
